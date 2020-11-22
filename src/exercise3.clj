@@ -3,7 +3,7 @@
 (defn fibonacci
   "Calculates the fibonacci result fo the given input value."
   [x]
-  (throw (Exception. "Not implemented."))
+  (if (<= x 1) x (+ (fibonacci (- x 1)) (fibonacci (- x 2))))
 )
 
 
